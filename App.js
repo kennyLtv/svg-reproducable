@@ -78,7 +78,7 @@ class App extends React.Component {
       <Svg>
         <AnimatedG translateX={10} translateY={10} rotation={0} origin={`${width/2}, ${height/2}`}>
             <Text translateX={5} fontSize={6} fontWeight="bold" translateY={10} fill="black" textAnchor="start">
-                <TSpan inlineSize={Math.max(10, this.state.width-10)}>Kevin ground round boudin chuck tri-tip short loin. Meatball prosciutto strip steak spare ribs leberkas pork venison rump shank pancetta hamburger t-bone ribeye. Pig chuck andouille, pork chop jowl corned beef cupim. Pork loin ball tip tail, bresaola bacon beef ribs cupim shoulder ham hock prosciutto turducken. Landjaeger t-bone tenderloin ham, tri-tip shank buffalo cow jerky boudin pig beef ribs.</TSpan>
+                <TSpan inlineSize={this.state.width-10}>Kevin ground round boudin chuck tri-tip short loin. Meatball prosciutto strip steak spare ribs leberkas pork venison rump shank pancetta hamburger t-bone ribeye. Pig chuck andouille, pork chop jowl corned beef cupim. Pork loin ball tip tail, bresaola bacon beef ribs cupim shoulder ham hock prosciutto turducken. Landjaeger t-bone tenderloin ham, tri-tip shank buffalo cow jerky boudin pig beef ribs.</TSpan>
             </Text>
             <Rect fill="transparent" stroke={"black"} strokeWidth={1} width={width} height={height}/>
             <AnimatedRect {...this.resizeResponse.panHandlers} fill="black" x={dx} y={dy} height={boxSize} width={boxSize}></AnimatedRect>
